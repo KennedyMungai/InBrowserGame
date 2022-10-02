@@ -5,7 +5,6 @@ import { Sky } from '@react-three/drei';
 function App() {
   return (
     <>
-      <div>Outside Canvas</div>
       <Canvas>
         <Sky>
 
