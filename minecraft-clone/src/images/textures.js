@@ -1,3 +1,5 @@
+import { TextureLoader } from 'three';
+
 import {
         dirtImg,
         logImg,
@@ -6,3 +8,4 @@ import {
         woodImg
         } from './images';
 
+const dirtTexture = 
