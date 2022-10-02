@@ -5,6 +5,11 @@ import React from 'react';
 
 const Player = () => {
     const { camera } = useThree();
+    const [ref] = useSphere(() => ({
+        mass: 1,
+        type: 'Dynamic',
+        position: [0, 0, 0]
+    }));
 
     return (
         <div>Player</div>
