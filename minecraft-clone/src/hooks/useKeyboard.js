@@ -15,7 +15,13 @@ const useKeyboard = () => {
   });
 
   useEffect(() => {
-    
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
+
+    return() => {
+      document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
+    }
   }, []);
   
 
