@@ -14,8 +14,8 @@ const useKeyboard = () => {
     texture5: false,
   });
 
-  const handleKeyDown = useCallback(() => {
-    
+  const handleKeyDown = useCallback((e) => {
+
   }, []);
 
   useEffect(() => {
