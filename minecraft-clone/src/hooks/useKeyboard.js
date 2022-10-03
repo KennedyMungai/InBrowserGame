@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 const useKeyboard = () => {
   const [actions, setActions] = useState({
@@ -13,6 +13,10 @@ const useKeyboard = () => {
     texture4: false,
     texture5: false,
   });
+
+  const handleKeyDown = useCallback(() => {
+    
+  }, []);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
