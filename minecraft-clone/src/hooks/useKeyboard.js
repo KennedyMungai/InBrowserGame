@@ -1,4 +1,15 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react';
+
+
+function actionByKey(key) {
+  const keyActionMap = {
+    KeyW: 'moveForward',
+    KeyS: 'moveBack',
+    KeyA: 'moveLeft',
+    KeyD: 'moveRight',
+    Space: 'jump'
+  }
+};
 
 const useKeyboard = () => {
   const [actions, setActions] = useState({
