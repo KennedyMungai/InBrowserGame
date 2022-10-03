@@ -15,7 +15,6 @@ const Player = () => {
     const pos = useRef([ 0, 0, 0]);
 
     useFrame(() => {
-        console.log('frame');
         camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[1]));
     });
 
