@@ -13,7 +13,6 @@ const Player = () => {
 
     return (
         <mesh ref={ref}>
-
         </mesh>
     )
 }
