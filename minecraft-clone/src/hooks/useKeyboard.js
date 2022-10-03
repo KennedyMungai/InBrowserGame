@@ -15,7 +15,7 @@ function actionByKey(key) {
     Digit5: 'log',
   }
 
-  return keyActionMap(key);
+  return keyActionMap[key];
 };
 
 const useKeyboard = () => {
