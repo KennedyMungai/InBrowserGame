@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const useKeyboard = () => {
   const [actions, setActions] = useState({
@@ -13,6 +13,11 @@ const useKeyboard = () => {
     texture4: false,
     texture5: false,
   });
+
+  useEffect(() => {
+    
+  }, []);
+  
 
   return (
     <div>useKeyboard</div>
