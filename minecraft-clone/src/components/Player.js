@@ -9,7 +9,7 @@ const Player = () => {
     const [ref, api] = useSphere(() => ({
         mass: 1,
         type: 'Dynamic',
-        position: [0, 5, 0]
+        position: [0, 2, 0]
     }));
 
     const pos = useRef([ 0, 0, 10]);
