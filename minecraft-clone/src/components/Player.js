@@ -12,15 +12,15 @@ const Player = () => {
         position: [0, 0, 0]
     }));
 
-    const pos = useRef([ 0, 0, 10]);
+    const vel = useRef([ 0, 0, 10]);
 
     useEffect(() => {
-        api.position.subscribe((p) => pos.current = p);
-    }, [api.position]);
+        api.velocity.subscribe((v) => vel.current = p);
+    }, [api.velocity]);
     
 
     useFrame(() => {
-        camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[1]));
+        camera.position.copy(new Vector3(vel.current[0], vel.current[1], vel.current[1]));
     });
 
     return (
