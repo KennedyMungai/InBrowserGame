@@ -16,7 +16,7 @@ const Player = () => {
 
     useEffect(() => {
         
-    }, []);
+    }, [api]);
     
 
     useFrame(() => {
