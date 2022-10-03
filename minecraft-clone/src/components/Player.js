@@ -6,7 +6,7 @@ import { Vector3 } from 'three';
 
 const Player = () => {
     const { camera } = useThree();
-    const [ref] = useSphere(() => ({
+    const [ref, api] = useSphere(() => ({
         mass: 1,
         type: 'Dynamic',
         position: [0, 0, 0]
