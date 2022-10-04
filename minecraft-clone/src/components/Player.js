@@ -7,7 +7,7 @@ import useKeyboard from '../hooks/useKeyboard';
 
 const Player = () => {
     const actions = useKeyboard();
-    console.log('actions' Object.entries(actions).filter(([k, v]) => v ));
+    console.log('actions' ,Object.entries(actions).filter(([k, v]) => v ));
 
     const { camera } = useThree();
     const [ref, api] = useSphere(() => ({
