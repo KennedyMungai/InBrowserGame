@@ -45,6 +45,19 @@ const useKeyboard = () => {
     }
   }, []);
 
+  const handleKeyUp = useCallback((e) => {
+    const action = actionByKey[e.code];
+
+    if(action) {
+      setActions((prev) => {
+        return ({
+          ...prev, 
+          [action]: false
+        })
+      });
+    }
+  });
+
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
