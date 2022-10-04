@@ -66,7 +66,7 @@ const useKeyboard = () => {
       document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
     }
-  }, []);
+  }, [handleKeyDown, handleKeyUp]);
   
 
   return (
