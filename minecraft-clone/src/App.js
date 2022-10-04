@@ -19,7 +19,7 @@ function App() {
           <Ground />
         </Physics>
       </Canvas>
-      <div className='cursor'>+</div>
+      <div className='absolute cursor'>+</div>
     </>
   );
 }
