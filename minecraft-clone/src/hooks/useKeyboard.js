@@ -36,10 +36,10 @@ const useKeyboard = () => {
     const action = actionByKey[e.code];
 
     if(action) {
-      setMovement((prev) => {
+      setAction((prev) => {
         return ({
           ...prev, 
-          [action]
+          [action]: true
         })
       });
     }
