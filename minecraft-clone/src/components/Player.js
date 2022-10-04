@@ -41,9 +41,9 @@ const Player = () => {
             (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
         );
         const sideVector = Vector3(
+            (moveRight ? 1 : 0) - (moveLeft ? 1 : 0),
             0,
             0,
-            (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
         );
         
         if (jump && Math.abs(vel.current[1]) < 0.05) {
