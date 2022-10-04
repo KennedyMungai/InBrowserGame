@@ -19,6 +19,7 @@ function App() {
           <Ground />
         </Physics>
       </Canvas>
+      <div className='cursor'>+</div>
     </>
   );
 }
