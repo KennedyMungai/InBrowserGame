@@ -33,11 +33,13 @@ const useKeyboard = () => {
   });
 
   const handleKeyDown = useCallback((e) => {
-    if(actionByKey[e.code]) {
+    const action = actionByKey[e.code];
+
+    if(action) {
       setMovement((prev) => {
         return ({
           ...prev, 
-          [actionByKey(e.code)]
+          [action]
         })
       });
     }
