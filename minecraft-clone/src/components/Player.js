@@ -35,15 +35,15 @@ const Player = () => {
     useFrame(() => {
         camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[0]));
 
-        const direction = Vector3();
+        const direction = new Vector3();
 
-        const frontVector = Vector3(
+        const frontVector = new Vector3(
             0,
             0,
             (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
         );
 
-        const sideVector = Vector3(
+        const sideVector = new Vector3(
             (moveLeft ? 1 : 0) - (moveRight ? 1 : 0),
             0,
             0,
