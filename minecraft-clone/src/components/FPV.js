@@ -1,13 +1,14 @@
+import { PointerLockControls } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import React from 'react';
 
 
 const FPV = () => {
-    const { camera } = useThree();
+    const { camera, gl } = useThree();
 
     return (
-        <div>FPV</div>
+        <PointerLockControls args={[camera, gl.domElement]} />
     )
 }
 
-export default FPV
+export default FPV;
