@@ -35,7 +35,7 @@ const Player = () => {
         camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[0]));
         
         if (actions.jump) {
-            api.velocity.set(vel.current[0], 1, vel.current[0]);
+            api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[0]);
             
         }
     });
