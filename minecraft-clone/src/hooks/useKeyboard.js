@@ -28,12 +28,19 @@ const useKeyboard = () => {
     texture1: false,
     texture2: false,
     texture3: false,
-    texture4: false,
+    texture4: false,  
     texture5: false,
   });
 
   const handleKeyDown = useCallback((e) => {
-
+    if(actionByKey[e.code]) {
+      setMovement((prev) => {
+        return ({
+          ...prev, 
+          [actionByKey(e.code)]
+        })
+      });
+    }
   }, []);
 
   useEffect(() => {
