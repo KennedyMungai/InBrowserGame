@@ -48,7 +48,10 @@ const Player = () => {
             0,
         );
 
-        direction.subVectors(frontVector, sideVector);
+        direction
+            .subVectors(frontVector, sideVector)
+            .normalize()
+            .multiplyScalar();
         
         if (jump && Math.abs(vel.current[1]) < 0.05) {
             api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
