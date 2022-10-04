@@ -31,7 +31,7 @@ const Player = () => {
 
     useFrame(() => {
         camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[0]));
-        api.velocity.set(0, 1, 0);
+        // api.velocity.set(0, 1, 0);
     });
 
     return (
