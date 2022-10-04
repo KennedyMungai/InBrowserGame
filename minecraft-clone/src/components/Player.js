@@ -5,6 +5,9 @@ import { Vector3 } from 'three';
 import useKeyboard from '../hooks/useKeyboard';
 
 
+const JUMP_FORCE = 10;
+
+
 const Player = () => {
     const actions = useKeyboard();
 
