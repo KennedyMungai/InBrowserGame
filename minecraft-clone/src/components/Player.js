@@ -35,7 +35,11 @@ const Player = () => {
         camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[0]));
 
         const direction = Vector3();
-        const frontVector = Vector3();
+        const frontVector = Vector3(
+            0,
+            0,
+            (actions.moveBackward ? 1 : 0) - (actions.moveForward ? 1 : 0)
+        );
         const sideVector = Vector3();
         
         if (actions.jump && Math.abs(vel.current[1]) < 0.05) {
