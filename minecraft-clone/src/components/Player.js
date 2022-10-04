@@ -41,7 +41,7 @@ const Player = () => {
             (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
         );
         const sideVector = Vector3(
-            (moveRight ? 1 : 0) - (moveLeft ? 1 : 0),
+            (moveLeft ? 1 : 0) - (moveRight ? 1 : 0),
             0,
             0,
         );
