@@ -6,6 +6,7 @@ import useKeyboard from '../hooks/useKeyboard';
 
 
 const JUMP_FORCE = 7.5;
+const SPEED = 5;
 
 
 const Player = () => {
