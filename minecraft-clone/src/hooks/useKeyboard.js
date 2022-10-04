@@ -36,7 +36,7 @@ const useKeyboard = () => {
     const action = actionByKey[e.code];
 
     if(action) {
-      setAction((prev) => {
+      setActions((prev) => {
         return ({
           ...prev, 
           [action]: true
