@@ -38,13 +38,12 @@ const Player = () => {
         const frontVector = Vector3(
             0,
             0,
-            (actions.moveBackward ? 1 : 0) - (actions.moveForward ? 1 : 0)
+            (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
         );
         const sideVector = Vector3();
         
-        if (actions.jump && Math.abs(vel.current[1]) < 0.05) {
+        if (jump && Math.abs(vel.current[1]) < 0.05) {
             api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
-            
         }
     });
 
