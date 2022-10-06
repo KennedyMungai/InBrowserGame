@@ -10,7 +10,7 @@ const Cube = ({ position, texture }) =>
         position
     }));
 
-    const activeTexture = textures[texture];
+    const activeTexture = textures[texture + 'Texture'];
 
     return (
         <mesh ref={ref}>
