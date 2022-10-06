@@ -15,7 +15,7 @@ const Cube = ({ position, texture }) =>
     return (
         <mesh ref={ref}>
             <boxBufferGeometry attach="geometry" />
-            <meshStandardMaterial attach="material" color="hotpink" />
+            <meshStandardMaterial attach="material" color="hotpink" map={activeTexture} />
         </mesh>
     )
 }
