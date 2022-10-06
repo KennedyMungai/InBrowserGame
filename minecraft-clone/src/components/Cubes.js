@@ -8,5 +8,10 @@ export const Cubes = () =>
     ]);
 
     console.log(cubes);
-    return null;
+    return cubes.map(cube =>
+    {
+        return (
+            <Cube />
+        );
+    });
 };
