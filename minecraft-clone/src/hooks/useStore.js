@@ -5,8 +5,4 @@ import React from 'react';
 export const useStore = create((set) => 
 {
 
-
-    return (
-        <div>useStore</div>
-    )
 });
