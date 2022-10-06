@@ -2,11 +2,11 @@ import create from 'zustand';
 import React from 'react';
 
 
-const useStore = () =>
+export const useStore = create((set) => 
 {
+
+
     return (
         <div>useStore</div>
     )
-}
-
-export default useStore
+});
