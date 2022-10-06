@@ -1,8 +1,13 @@
 import create from 'zustand';
-import React from 'react';
 
 
-export const useStore = create((set) => 
-{
-
-});
+export const useStore = create((set) => (
+    {
+        texture: 'dirt',
+        cubes: [],
+        addCube: () => { },
+        removeCube: () => { },
+        setTexture: () => { },
+        saveWorld: () => { },
+        resetWorld: () => { }
+    }));
