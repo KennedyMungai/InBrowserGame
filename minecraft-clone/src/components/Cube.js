@@ -10,6 +10,8 @@ const Cube = ({ position, texture }) =>
         position
     }));
 
+    const activeTexture = textures[texture];
+
     return (
         <mesh ref={ref}>
             <boxBufferGeometry attach="geometry" />
