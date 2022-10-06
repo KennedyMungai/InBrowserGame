@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Cube = () =>
+const Cube = ({ position, texture }) =>
 {
     return (
         <div>Cube</div>
