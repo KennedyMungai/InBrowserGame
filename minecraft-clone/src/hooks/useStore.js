@@ -5,7 +5,7 @@ export const useStore = create((set) => (
     {
         texture: 'dirt',
         cubes: [],
-        addCube: () => { },
+        addCube: (x, y, z) => { },
         removeCube: () => { },
         setTexture: () => { },
         saveWorld: () => { },
