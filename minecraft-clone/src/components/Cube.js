@@ -4,8 +4,16 @@ import { useBox } from '@react-three/cannon';
 
 const Cube = ({ position, texture }) =>
 {
+    const ref = useBox(() => ({
+        type: 'Static',
+        position
+    }));
+
     return (
-        <div>Cube</div>
+        <mesh ref={ref}>
+            <boxBufferGeometry attach="geometry" />
+            <meshStandardMaterial attach="material" color="hotpink" />
+        </mesh>
     )
 }
 
