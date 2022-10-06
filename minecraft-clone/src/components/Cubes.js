@@ -8,10 +8,10 @@ export const Cubes = () =>
     ]);
 
     console.log(cubes);
-    return cubes.map(cube =>
+    return cubes.map(({ key, position, texture }) =>
     {
         return (
-            <Cube />
+            <Cube key={key} position={position} />
         );
     });
 };
