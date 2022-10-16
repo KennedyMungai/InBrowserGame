@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 
 
-function actionByKey(key) {
+function actionByKey(key)
+{
   const keyActionMap = {
     KeyW: 'moveForward',
     KeyS: 'moveBack',
@@ -18,56 +19,65 @@ function actionByKey(key) {
   return keyActionMap[key];
 };
 
-const useKeyboard = () => {
+const useKeyboard = () =>
+{
   const [actions, setActions] = useState({
-    moveForward: false, 
+    moveForward: false,
     moveBackward: false,
     moveLeft: false,
     moveRight: false,
     jump: false,
-    texture1: false,
-    texture2: false,
-    texture3: false,
-    texture4: false,  
-    texture5: false,
+    dirt: false,
+    grass: false,
+    glass: false,
+    wood: false,
+    log: false,
   });
 
-  const handleKeyDown = useCallback((e) => {
+  const handleKeyDown = useCallback((e) =>
+  {
     const action = actionByKey(e.code);
 
-    if(action) {
-      setActions((prev) => {
+    if (action)
+    {
+      setActions((prev) =>
+      {
         return ({
-          ...prev, 
+          ...prev,
           [action]: true
         })
       });
     }
   }, []);
 
-  const handleKeyUp = useCallback((e) => {
+  const handleKeyUp = useCallback((e) =>
+  {
     const action = actionByKey(e.code);
 
-    if(action) {
-      setActions((prev) => {
+    if (action)
+    {
+      setActions((prev) =>
+      {
         return ({
-          ...prev, 
+          ...prev,
           [action]: false
         })
       });
     }
   });
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
 
-    return() => {
+    return () =>
+    {
       document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
+      document.addEventListener('keyup', handleKeyUp);
     }
   }, [handleKeyDown, handleKeyUp]);
-  
+
 
   return actions;
 }
