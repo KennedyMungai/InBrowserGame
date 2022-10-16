@@ -9,7 +9,10 @@ const TextureSelector = () =>
 
     useEffect(() =>
     {
-
+        const visibilityTimeout = setTimeout(() =>
+        {
+            setVisible(false);
+        }, 2000)
     }, [activeTexture]);
 
 
