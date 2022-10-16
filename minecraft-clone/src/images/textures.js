@@ -1,4 +1,4 @@
-import { NearestFilter, TextureLoader } from 'three';
+import { NearestFilter, RepeatWrapping, TextureLoader } from 'three';
 
 import
 {
@@ -22,6 +22,8 @@ grassTexture.magFilter = NearestFilter;
 glassTexture.magFilter = NearestFilter;
 woodTexture.magFilter = NearestFilter;
 groundTexture.magFilter = NearestFilter;
+groundTexture.wrapS = RepeatWrapping;
+groundTexture.wrapT = RepeatWrapping;
 
 export
 {
