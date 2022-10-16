@@ -70,7 +70,7 @@ const Cube = ({ position, texture }) =>
             }}
         >
             <boxBufferGeometry attach="geometry" />
-            <meshStandardMaterial attach="material" map={activeTexture} />
+            <meshStandardMaterial attach="material" map={activeTexture} color={isHovered ? 'gray' : ''} />
         </mesh>
     )
 }
