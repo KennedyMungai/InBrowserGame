@@ -20,7 +20,7 @@ const TextureSelector = () =>
         {
             setTexture('dirt');
         }
-    }, [texture1, texture2, texture3, texture4, texture5]);
+    }, [dirt, grass, glass, wood, log]);
 
 
     useEffect(() =>
