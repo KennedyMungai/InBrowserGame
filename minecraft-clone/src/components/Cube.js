@@ -6,7 +6,7 @@ import { useStore } from '../hooks/useStore';
 
 const Cube = ({ position, texture }) =>
 {
-    const ref = useBox(() => ({
+    const [ref] = useBox(() => ({
         type: 'Static',
         position
     }));
