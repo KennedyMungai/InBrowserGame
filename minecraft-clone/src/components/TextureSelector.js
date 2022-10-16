@@ -7,18 +7,18 @@ const TextureSelector = () =>
     const [visible, setVisible] = useState(false);
     const [activeTexture, setTexture] = useStore((state) => [state.texture, state.setTexture]);
     const {
-        texture1,
-        texture2,
-        texture3,
-        texture4,
-        texture5,
+        dirt,
+        grass,
+        glass,
+        wood,
+        log,
     } = useKeyboard();
 
     useEffect(() =>
     {
         if (texture1)
         {
-
+            setTexture('dirt');
         }
     }, [texture1, texture2, texture3, texture4, texture5]);
 
