@@ -25,7 +25,7 @@ const Ground = () =>
             onClick={() =>
             {
                 e.stopPropagation()
-                const [x, y, z] = Object.values(e.point).map(val => Math.floor(val));
+                const [x, y, z] = Object.values(e.point).map(val => Math.ceil(val));
                 addCube(x, y, z);
             }}
         >
