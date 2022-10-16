@@ -67,7 +67,7 @@ const TextureSelector = () =>
                         src={src}
                         key={k}
                         alt={k}
-                        className={`${k === activeTexture ? }`}
+                        className={`${k === activeTexture ? 'active' : ''}`}
                     />
                 )
             })}
