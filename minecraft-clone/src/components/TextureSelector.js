@@ -16,6 +16,15 @@ const TextureSelector = () =>
 
     useEffect(() =>
     {
+        if (texture1)
+        {
+
+        }
+    }, [texture1, texture2, texture3, texture4, texture5]);
+
+
+    useEffect(() =>
+    {
         const visibilityTimeout = setTimeout(() =>
         {
             setVisible(false);
