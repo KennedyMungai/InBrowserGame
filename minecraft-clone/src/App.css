@@ -32,12 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.flex { 
+.flex {
   display: flex;
 }
 
@@ -49,7 +50,7 @@
   position: relative;
 }
 
-.absolute { 
+.absolute {
   position: absolute;
 }
 
@@ -61,4 +62,8 @@
 
 .cursor {
   color: white;
+}
+
+.texture-selector {
+  transform: scale(10);
 }
