@@ -21,6 +21,7 @@ const Cube = ({ position, texture }) =>
             onClick={(e) =>
             {
                 e.stopPropagation();
+                const clickedFace = Math.floor(e.faceIndex / 2);
             }}
         >
             <boxBufferGeometry attach="geometry" />
