@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useStore, useKeyboard } from '../hooks/useStore';
 import
-    {
-        dirtImg,
-        grassImg,
-        glassImg,
-        woodImg,
-        logImg
-    } from '../images/images';
+{
+    dirtImg,
+    grassImg,
+    glassImg,
+    woodImg,
+    logImg
+} from '../images/images';
+
+
+const images = {
+    dirt: dirtImg,
+    grass: grassImg,
+    glass: glassImg,
+    wood: woodImg,
+    log: logImg
+};
 
 
 const TextureSelector = () =>
