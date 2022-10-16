@@ -5,7 +5,7 @@ import { useStore, useKeyboard } from '../hooks/useStore';
 const TextureSelector = () =>
 {
     const [visible, setVisible] = useState(false);
-    const [activeTexture] = useStore((state) => [state.texture]);
+    const [activeTexture, setTexture] = useStore((state) => [state.texture, state.setTexture]);
     const {
         texture1,
         texture2,
