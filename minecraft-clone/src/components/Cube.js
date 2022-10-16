@@ -10,6 +10,8 @@ const Cube = ({ position, texture }) =>
         position
     }));
 
+    const [addCube] = useStore((state) => [state.addCube]);
+
     const activeTexture = textures[texture + 'Texture'];
 
     return (
