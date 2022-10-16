@@ -58,6 +58,11 @@ const Cube = ({ position, texture }) =>
                     return;
                 }
             }}
+            onPointerMove={(e) =>
+            {
+                e.stopPropagation();
+                setIsHovered(true);
+            }}
         >
             <boxBufferGeometry attach="geometry" />
             <meshStandardMaterial attach="material" map={activeTexture} />
