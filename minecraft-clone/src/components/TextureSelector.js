@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useStore, useKeyboard } from '../hooks/useStore';
+import { dirtImg, grassImg, glassImg, woodImg, logImg } from '../images/images';
 
 
 const TextureSelector = () =>
