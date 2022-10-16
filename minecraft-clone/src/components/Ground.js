@@ -1,7 +1,7 @@
 import { usePlane } from '@react-three/cannon';
 import React from 'react';
 import { NearestFilter, RepeatWrapping } from 'three';
-import { useStore } from 'zustand';
+import { useStore } from '../hooks/useStore';
 import { groundTexture } from '../images/textures';
 
 
