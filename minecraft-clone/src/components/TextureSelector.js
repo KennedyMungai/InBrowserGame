@@ -23,8 +23,8 @@ const TextureSelector = () =>
     }, [activeTexture]);
 
 
-    return (
-        <div>TextureSelector</div>
+    return visible && (
+        <div className='absolute centered'>TextureSelector</div>
     )
 }
 
