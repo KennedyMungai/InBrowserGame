@@ -7,6 +7,12 @@ const TextureSelector = () =>
     const [visible, setVisible] = useState(false);
     const [activeTexture] = useStore((state) => [state.texture]);
 
+    useEffect(() =>
+    {
+
+    }, []);
+
+
     return (
         <div>TextureSelector</div>
     )
