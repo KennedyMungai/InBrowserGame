@@ -22,6 +22,11 @@ const Cube = ({ position, texture }) =>
             {
                 e.stopPropagation();
                 const clickedFace = Math.floor(e.faceIndex / 2);
+
+                if (clickedFace === 0)
+                {
+                    addCube();
+                }
             }}
         >
             <boxBufferGeometry attach="geometry" />
