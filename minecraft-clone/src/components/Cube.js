@@ -26,7 +26,7 @@ const Cube = ({ position, texture }) =>
 
                 if (clickedFace === 0)
                 {
-                    addCube();
+                    addCube(x - 1, y, z);
                 }
             }}
         >
