@@ -1,6 +1,7 @@
 import React from 'react';
 import { useBox } from '@react-three/cannon';
 import * as textures from '../images/textures';
+import { useStore } from '../hooks/useStore';
 
 
 const Cube = ({ position, texture }) =>
