@@ -20,7 +20,7 @@ const TextureSelector = () =>
 
         if (pressedTexture)
         {
-            setTexture(pressedTexture[1]);
+            setTexture(pressedTexture[0]);
         }
     }, [setTexure, dirt, grass, glass, wood, log]);
 
