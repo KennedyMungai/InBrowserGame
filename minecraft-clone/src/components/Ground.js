@@ -12,6 +12,8 @@ const Ground = () =>
         position: [0, 0, 0]
     }));
 
+    const [addCube] = useStore((state) => [state.addCube]);
+
     groundTexture.magFilter = NearestFilter;
     groundTexture.wrapS = RepeatWrapping;
     groundTexture.wrapT = RepeatWrapping;
