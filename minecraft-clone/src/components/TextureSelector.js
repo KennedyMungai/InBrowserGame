@@ -15,6 +15,11 @@ const TextureSelector = () =>
         }, 2000);
 
         setVisible(true);
+
+        return () =>
+        {
+            clearTimeout(visibilityTimeout);
+        };
     }, [activeTexture]);
 
 
