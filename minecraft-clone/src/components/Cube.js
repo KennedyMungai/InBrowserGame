@@ -16,7 +16,13 @@ const Cube = ({ position, texture }) =>
     const activeTexture = textures[texture + 'Texture'];
 
     return (
-        <mesh ref={ref}>
+        <mesh
+            ref={ref}
+            onClick={(e) =>
+            {
+                e.stopPropagation();
+            }}
+        >
             <boxBufferGeometry attach="geometry" />
             <meshStandardMaterial attach="material" map={activeTexture} />
         </mesh>
